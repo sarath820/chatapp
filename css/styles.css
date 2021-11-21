@@ -3,9 +3,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 
-.chat-app{
-display: flex;
-}
+
 
 .pink-box{
   height: 750px;
@@ -15,17 +13,18 @@ display: flex;
     }
             /* phonearea */
 .phone {
-  position: relative;
-  right: 100px;
-  width: 270px;
+
+  width: 300px;
   background-color:  hsl(270, 20%, 96%);
-  margin: auto;
+  position: relative;
+  right: 70px;
+  top: 50px;
   border: 16px black solid;
   border-radius: 36px;
   font-size: 0.75rem;
   border-color: white;
   box-shadow: 40px 40px hsl(270, 20%, 96%);
-  margin-top: 50px;
+
 
   }
   .box{
@@ -145,10 +144,10 @@ span{
        /* textarea */
 .text{
   width: 450px;
-  align-self: center;
-  margin-right:50px;
+
   position: relative;
-  left: 150px;
+  top:230px;
+
   line-height: 1.5;
 }
 
@@ -156,37 +155,38 @@ h1{
   color: hsl(271, 36%, 24%);
 }
  .grey-box{
-   height: 600px;
+   height: 650px;
    width: 300px;
    background-color: hsl(270, 20%, 96%);
-   align-self: flex-end;
+   position: relative;
+   top: 150px;
+   z-index: -1;
    border-radius: 250px 0 0 0;
  }
 
-            /* media query */
-@media only screen and (max-width:400px){
-.chat-app{
-  flex-direction: column;
-}
-.text{
-  width: 270px;
-  position: static;
-  margin-top: 50px;
+ @media (max-width:500px) {
+   .text{
+     width:90% ;
+   }
+   .phone{
+     position: relative;
+     left:50px;
+     top : -530px;
 
-}
-.pink-box{
-   width: 50%;
-   height: 600px;
-}
-.phone{
-position: static;
-margin-top: -500px;
-
-}
-.grey-box{
-  width: 200px;
-  height: 500px;
-  margin-top: -450px;
-  position: relative;
-  z-index: -1;}
-}
+   }
+   .pink-box{
+     width: 50%;
+     height: 600px;
+   }
+   .text{
+     text-align: center;
+     position: relative;
+     top:-410px;
+   }
+   .grey-box{
+     top:-730px;
+     width: 200px;
+     height: 550px;
+     margin-left: 35%;
+   }
+ }
